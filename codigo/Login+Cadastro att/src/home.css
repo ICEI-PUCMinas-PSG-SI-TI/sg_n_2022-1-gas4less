@@ -18,12 +18,11 @@ body {
     margin-top: -85px;
   }
   .logo{
-      width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   #login-column{
     margin-top: 20px; 
     margin-bottom: 20px;
-  }
-  .voltar{
-    
   }

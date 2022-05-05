@@ -1,5 +1,5 @@
 .header{
-    background-color:black;
+    background-color:rgb(49, 49, 49);
 }
 .imagem1{
     width: 100%;
@@ -77,7 +77,7 @@
 }
 .footer{
     margin-top: 10px;
-    background: black;
+    background: rgb(49, 49, 49);
 }
 .footer_area{
     margin-top: 20px;
