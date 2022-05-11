@@ -1,5 +1,9 @@
+.icone{
+    width: 28px;
+    height: 28  px;
+}
 .header{
-    background-color:rgb(49, 49, 49);
+    background-color:white;
 }
 .imagem1{
     width: 100%;
@@ -25,7 +29,7 @@
 }
 .lista a{
     padding: 10px;
-    color: white;
+    color: gray;
     
 }
 .logo{

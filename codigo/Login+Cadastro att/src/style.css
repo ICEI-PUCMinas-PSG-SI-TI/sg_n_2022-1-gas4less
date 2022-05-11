@@ -1,6 +1,6 @@
 body {background-color:white;}
-.container-fluid {padding:50px;}
-.container{background-color:rgb(223, 223, 124);padding: 50px;  }
+.container-fluid {padding:20px;margin:0px;}
+.container{background-color:rgb(223, 223, 124);padding: 40px;  }
 #title{font-family: Arial, Helvetica, sans-serif, cursive;
 font-size: 25px;}
 .form-check{
