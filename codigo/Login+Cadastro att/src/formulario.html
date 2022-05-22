@@ -21,7 +21,7 @@
             <h3>Formulário para contato</h3>
             <form class="form" name="meu_form" autocomplete="off" >
                 <input class="field" type="text" id="nomeid" required="required" name="nome" placeholder="Nome" > 
-                <input class="field" type="email" id="emailid" name="email" placeholder="Email" >   
+                <input class="field" type="email" id="email" name="email" placeholder="Email" >   
                 <textarea class="field" placeholder="Digite sua mensagem aqui"></textarea>
                 <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
             </form>
@@ -34,7 +34,6 @@
         function Enviar() {
 
             var nome = document.getElementById("nomeid");
-
             if (nome.value != "") {
                 alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
                 location.replace("Principal2.html");
