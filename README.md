@@ -8,8 +8,8 @@ prezando ainda pela qualidade e confiabilidade do estabelecimento.
 * Pedro Henrique Ribeiro da Silva
 * Nilson Araujo de Andrade
 * Lucas Marques Gomes Viana Lima
-* Emanuel 
-* Igor 
+* Emanuel Nogueira Moreira da Costa
+* Igor Cruz Duarte
 
 ## Professores responsáveis
 
