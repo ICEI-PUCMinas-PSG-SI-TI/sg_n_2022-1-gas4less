@@ -1,0 +1,23 @@
+h5{
+    color: red;
+}
+#logo {
+        width:50%;
+        height:50%;
+}
+
+.panel-heading{
+    font-size:150%;
+    
+}
+
+.footer{
+    margin-top: 10px;
+    background: rgb(49, 49, 49);
+}
+.footer_area{
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center  ;
+    color: white;
+}

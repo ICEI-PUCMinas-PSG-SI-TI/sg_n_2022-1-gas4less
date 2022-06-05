@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <meta lang="pt-BR">
+    <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="Cadastroposto.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Cadastro Posto</div>
+
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-md-11 control-label">
+                                <p class="help-block">
+                                    <h5>*</h5> Campo Obrigatório
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-1 control-label" for="Nome"> Posto <h11>*</h11></label>
+                            <div class="col-md-8">
+                                <input id="Posto" name="Nome" placeholder="Nome Posto" class="form-control input-md"
+                                    required="" type="text">
+                            </div>
+                        </div>
+
+
+                        <label class="col-md-1 control-label" for="Idade">Região<h11>*</h11></label>
+                        <div class="col-md-2">
+                            <input id="idade" name="Região" placeholder="Digite a Região" class="form-control input-md"
+                                required="" type="text" maxlength="10" onBlur="showhide()">
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="prependedtext">Endereço <h11>*</h11></label>
+                            <div class="col-md-5">
+                                <input id="idade" name="Endereço" placeholder="Digite o Endereço"
+                                    class="form-control input-md" required="" type="text" maxlength="10"
+                                    onBlur="showhide()">
+                            </div>
+                        </div>
+
+                        <label class="col-md-1 control-label" for="Nome"> Gasolina<h11>*</h11></label>
+                        <div class="col-md-2">
+                            <input id="gasolina" name="dtnasc" placeholder="Valor ex : 8,99 " class="form-control input-md"
+                                required="" type="text" maxlength="10" onBlur="showhide()">
+                        </div>
+                        <label class="col-md-1 control-label" for="Nome"> Gasolina Aditivada<h11>*</h11></label>
+                        <div class="col-md-2">
+                            <input id="gasolinaAditivada" name="dtnasc" placeholder="Valor ex : 8,99 " class="form-control input-md"
+                                required="" type="text" maxlength="10" onBlur="showhide()">
+                        </div>
+                        <label class="col-md-1 control-label" for="Nome"> Àlcool<h11>*</h11></label>
+                        <div class="col-md-2">
+                            <input id="alcool" name="dtnasc" placeholder="Valor ex : 8,99 " class="form-control input-md"
+                                required="" type="text" maxlength="10" onBlur="showhide()">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="Cadastrar"></label>
+                            <div class="col-md-8">
+                                <button id="Cadastrar" name="Cadastrar" class="btn btn-success"
+                                    type="Submit" onclick="Enviar()">Cadastrar</button>
+                                <button id="Cancelar" name="Cancelar" class="btn btn-danger"
+                                    type="Reset" >Cancelar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+    </main>
+    </fieldset>
+    </form>
+    <div>
+    </div>
+    <footer class=" footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 footer_area">
+                    GAS4LESS - Todos os direitos reservados - 2022
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        function Voltar(){
+            var voltar= document.getElementById("Cancelar");
+            if(voltar.value)
+            location.replace("Principal2.html");
+        }
+
+        function Enviar() {
+
+            var nome = document.getElementById("Posto");
+            if (nome.value != "") {
+                alert('Posto cadastrado com sucesso!');
+                location.replace("Principal2.html");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

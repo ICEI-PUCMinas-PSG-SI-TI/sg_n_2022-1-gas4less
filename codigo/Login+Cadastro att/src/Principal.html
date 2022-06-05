@@ -50,22 +50,21 @@
                             <div class="lema">Abasteça com Sabedoria</div>
                             <h1 class="h1">Encontre os melhores preços e postos de gasolina</h1>
                             <div class="col-lg-6 col-md-6 col-sm-12 p-0">
-                                <input type="text" class="form-control search-slt" name="q"
-                                    placeholder="Digite o nome da Cidade" value="" required>
+                                <input type="text" class="form-control search-slt" name="q" id="RegiaoPostos"
+                                    placeholder="Digite o nome da Região Ex : Região Sul" value="" required>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                <select class="form-control search-slt" name="fuel_id" id="exampleFormControlSelect1">
+                                <select class="form-control search-slt" name="fuel_id" id="exampleFormControlSelect1" >
                                     <option value="1">Selecione o Combustível</option>
                                     <option value="2">Comum</option>
-                                    <option value="3">Aditivada</option>
+                                    <option value="3">Diesel</option>
                                     <option value="4">Etanol</option>
-                                    <option value="4">Diesel</option>
-                                    <option value="6">Gás Natural</option>
+                                    <option value="4">Gás Natural</option>
                                 </select>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                <button type="submit" name="search" value="true" class="btn wrn-btn"
-                                    style="background:blue;color:white;border:2px solid blue"><i class="fa-solid fa-gas-pump"></i> Pesquisar Postos</button>
+                                <button type="button" name="search" value="true" class="btn wrn-btn"
+                                    style="background:blue;color:white;border:2px solid blue" onclick="postos()"><i class="fa-solid fa-gas-pump"></i> Pesquisar Postos</button>
                             </div>
                         </div>
                     </div>
@@ -243,6 +242,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+        <script >
+            function postos() {
+            var regiao= document.getElementById("RegiaoPostos").value
+                if (regiao.RegiaoPostos=="Região Sul") {
+                    window.location.replace("PostoSul.html");
+                }
+                else {
+                    alert("Texto inválido")
+                }
+                return false;
+    
+            }
+        </script>   
 </body>
 
 </html>
