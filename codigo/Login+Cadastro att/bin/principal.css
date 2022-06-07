@@ -3,7 +3,7 @@
     height: 30px;
 }
 .header{
-    background-color:white;
+    background-color:rgb(126, 126, 126);
 }
 .imagem1{
     width: 100%;
@@ -15,6 +15,7 @@
     margin: 0px;
     padding: 0px;
     margin-top: 25px; 
+    color: aqua;
 }
 .botao1{
     float: right;
@@ -88,7 +89,7 @@
 }
 .footer{
     margin-top: 10px;
-    background: rgb(49, 49, 49);
+    background: rgb(126, 126, 126);
 }
 .footer_area{
     margin-top: 20px;
