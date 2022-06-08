@@ -50,8 +50,13 @@
                             <div class="lema">Abasteça com Sabedoria</div>
                             <h1 class="h1">Encontre os melhores preços e postos de gasolina</h1>
                             <div class="col-lg-6 col-md-6 col-sm-12 p-0">
-                                <input type="text" class="form-control search-slt" name="q"
-                                    placeholder="Digite o nome da Região" value="" required>
+                                <select class="form-control search-slt" name="fuel_id" id="RegiaoPostos" >
+                                    <option value="1">Selecione Sua Região</option>
+                                    <option value="2">Região Sul</option>
+                                    <option value="3">Região Norte</option>
+                                    <option value="4">Região Leste</option>
+                                    <option value="5">Região Oeste</option>
+                                </select>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                 <select class="form-control search-slt" name="fuel_id" id="exampleFormControlSelect1">
@@ -64,7 +69,7 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                 <button type="submit" name="search" value="true" class="btn wrn-btn"
-                                    style="background:rgb(255, 0, 0);color:rgb(0, 0, 0);border:2px solid rgb(255, 0, 0)"><i class="fa-solid fa-gas-pump"></i> Pesquisar Postos</button>
+                                    style="background:rgb(255, 0, 0);color:rgb(0, 0, 0);border:2px solid rgb(255, 0, 0)"onclick="postos()"><i class="fa-solid fa-gas-pump" ></i> Pesquisar Postos</button>
                             </div>
                         </div>
                     </div>
@@ -224,8 +229,18 @@
                let st = JSON.parse( localStorage.getItem("user"))
                document.getElementById("dadoteste").innerText = st.username;
             }
-
-        </script>
+            function postos() {
+            let select = document.querySelector('#RegiaoPostos');
+            let optionValue = select.options[select.selectedIndex];
+            let value=optionValue.value;
+            if(value==2){
+                window.location.replace("PostoSul.html");
+            }
+            if(value==3){
+                window.location.replace("PostoNorte.html");
+            }
+            }
+        </script> 
 </body>
 
 </html>
