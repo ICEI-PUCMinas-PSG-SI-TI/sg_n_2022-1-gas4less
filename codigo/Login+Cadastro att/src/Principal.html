@@ -25,13 +25,14 @@
                         </div>
                         <div class="col-6 col-sm-6 col-md-8 col-lg-10 memu">
                             <nav class="nav nav-pills flex-column flex-sm-row lista">
-                                <a class="flex-sm-fill text-sm-center nav-link" href="#">Notícias</a>
-                                <a class="flex-sm-fill text-sm-center nav-link" href="#">Cidade</a>
-                                <a class="flex-sm-fill text-sm-center nav-link" href="#">Primeiros passos</a>
-                                <a class="flex-sm-fill text-sm-center nav-link" href="formulario.html">Fale conosco</a>
-                                <a class="flex-sm-fill text-sm-center nav-link" href="Cadastro.html">Registrar</a>
-                                <a href="Login.html"><button type="submit" class="btn btn-primary btn-block botao_login">
+                                <a style="color:rgb(0, 0, 0);" class="flex-sm-fill text-sm-center nav-link" href="#">Notícias</a>
+                                <a style="color:rgb(0, 0, 0);" class="flex-sm-fill text-sm-center nav-link" href="#">Cidade</a>
+                                <a style="color:rgb(0, 0, 0);" class="flex-sm-fill text-sm-center nav-link" href="#">Primeiros passos</a>
+                                <a style="color:rgb(0, 0, 0);" class="flex-sm-fill text-sm-center nav-link" href="formulario.html">Fale conosco</a>
+                                <a style="color:rgb(0, 0, 0);" class="flex-sm-fill text-sm-center nav-link" href="Cadastro.html">Registrar</a>
+                                <a href="Login.html"><button style="background:rgb(255, 0, 0);color:rgb(0, 0, 0);border:2px solid rgb(255, 0, 0)" type="submit" class="btn btn-primary btn-block botao_login">
                                         Login </button></a>
+                                        
                             </nav>
                         </div>
                     </div>  
@@ -49,13 +50,9 @@
                         <div class="row descer">
                             <div class="lema">Abasteça com Sabedoria</div>
                             <h1 class="h1">Encontre os melhores preços e postos de gasolina</h1>
-                            <div class="col-lg-6 col-md-3 col-sm-12 p-0">
-                                <select class="form-control search-slt" name="fuel_id" id="RegiaoPostos">
-                                    <option value="1">Região Leste</option>
-                                    <option value="2">Região Norte</option>
-                                    <option value="3">Região Sul</option>
-                                    <option value="4">Região Oeste</option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                                <input type="text" class="form-control search-slt" name="q" id="RegiaoPostos"
+                                    placeholder="Digite o nome da Região Ex : Região Sul" value="" required>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                 <select class="form-control search-slt" name="fuel_id" id="exampleFormControlSelect1" >
@@ -68,7 +65,7 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                 <button type="button" name="search" value="true" class="btn wrn-btn"
-                                    style="background:blue;color:white;border:2px solid blue" onclick="postos()" ><i class="fa-solid fa-gas-pump"></i> Pesquisar Postos</button>
+                                    style="background:rgb(255, 0, 0);color:rgb(0, 0, 0);border:2px solid rgb(255, 0, 0)" onclick="postos()"><i class="fa-solid fa-gas-pump"></i> Pesquisar Postos</button>
                             </div>
                         </div>
                     </div>
@@ -135,7 +132,7 @@
                                 combustíveis.
                             </p>
                             <div class="col-sm-12 col-md-12 col-lg-12 ">
-                                <button type="button" class="btn btn-primary btn-sm botao1"> Ver postos de gasolina
+                                <button style="background:rgb(255, 0, 0);color:rgb(0, 0, 0);border:2px solid rgb(255, 0, 0)" type="button" class="btn btn-primary btn-sm botao1"> Ver postos de gasolina
                                     proximos
                                 </button>
                             </div>
@@ -248,16 +245,15 @@
         crossorigin="anonymous"></script>
         <script >
             function postos() {
-                var regiao= document.querySelector('#RegiaoPostos');
-                var optionvalue = regiao.options[regiao.selectedIndex];
-                var value=optionvalue.value;
-
-                if(value==3){
+            var regiao= document.getElementById("RegiaoPostos").value
+                if (regiao.RegiaoPostos=="Região Sul") {
                     window.location.replace("PostoSul.html");
                 }
-                if(value==2){
-                    window.location.replace("PostoNorte.html");
-                }  
+                else {
+                    alert("Texto inválido")
+                }
+                return false;
+    
             }
         </script>   
 </body>

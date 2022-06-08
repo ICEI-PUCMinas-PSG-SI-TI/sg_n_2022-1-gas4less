@@ -2,14 +2,14 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    
+    background-color: rgb(94, 91, 91) ;
   }
   #login .container #login-row #login-column #login-box {
     margin-top: 120px;
     max-width: 600px;
     height: 320px;
     border: 1px solid #9C9C9C;
-    background-color:rgb(194, 180, 180);
+    background-color:rgb(94, 91, 91);
   }
   #login .container #login-row #login-column #login-box #login-form {
     padding: 20px;
@@ -26,4 +26,3 @@ body {
     margin-top: 20px; 
     margin-bottom: 20px;
   }
-  

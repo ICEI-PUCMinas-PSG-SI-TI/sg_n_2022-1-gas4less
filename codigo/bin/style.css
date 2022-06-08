@@ -5,3 +5,12 @@ body {background-color:black;}
 .form-check{
     margin: 10px;
 }
+
+.form {
+    background-color: rgb(160, 54, 54);
+    border-radius: 10px;
+}
+
+.enviar {
+    background-color: rgb(0, 0, 0);
+}
