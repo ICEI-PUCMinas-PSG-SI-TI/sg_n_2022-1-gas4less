@@ -1,22 +1,29 @@
-h5{
+h5 {
     color: red;
 }
-#logo {
-        width:50%;
-        height:50%;
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+header{
+    background-color:rgb(219, 219, 219);;
+}
+.panel-heading {
+    font-size: 250%;
+    height: 110px;
 }
 
-.panel-heading{
-    font-size:150%;
-}
-
-.footer{
+.footer {
+    margin-bottom: 0px;
     margin-top: 10px;
-    background: rgb(49, 49, 49);
+    background: rgb(219, 219, 219);
 }
-.footer_area{
-    margin-top: 20px;
+
+.footer_area {
+    margin-top:20px;
+    margin-bottom: 20px;
     padding: 15px;
-    text-align: center  ;
-    color: white;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }

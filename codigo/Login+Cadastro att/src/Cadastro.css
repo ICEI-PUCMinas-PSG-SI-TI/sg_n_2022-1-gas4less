@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background: url(../imagens/background1.jpg);
+    height: 100%;
 }
 
 .container-fluid {
