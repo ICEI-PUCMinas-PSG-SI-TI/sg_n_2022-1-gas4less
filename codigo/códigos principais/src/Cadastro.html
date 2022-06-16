@@ -46,7 +46,7 @@
 							</div>
 							
 							<div class="form-group">
-								<select class="form-control search-slt" name="fuel_id" id="RegiaoPostos">
+								<select class="form-control search-slt" name="fuel_id">
                                     <option value="1">Categoria de Uso</option>
                                     <option value="2">Pessoal</option>
                                     <option value="3">Motorista de Aplicativo</option>
@@ -74,7 +74,6 @@
 			  email:event.email.value,
 			  password:event.password.value,
 			  endereco:event.endereco.value,
-			  categoriaUso:event.categoriaUso.value,
 		  };
 		  localStorage.setItem("user", JSON.stringify(user));
 		}
