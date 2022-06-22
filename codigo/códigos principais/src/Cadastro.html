@@ -90,22 +90,19 @@
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
 	<script>
-		const preencherFormulario = (local) => {
-			document.getElementById('endereco').value = local.logradouro;
-			document.getElementById('bairro').value = local.bairro;
-			document.getElementById('cidade').value = local.localidade;
-
-		}
-		const pesquisarCep = async () => {
-			const cep = document.getElementById('cep').value;
-			console.log(cep);
-			const url = `http://viacep.com.br/ws/${cep}/json/`;
-			
-			const dados = await fetch(url);
-			const local = await dados.json();
-			preencherFormulario(local);
-
-		}
+		const cep = document.getElementById("cep");
+		cep.addEventListener("blur", (e) =>{
+			let Cep = document.getElementById("cep").value;
+			let procurar =cep.value.replace("-","");
+			fetch(`https://viacep.com.br/ws/${procurar}/json/`).then((response) =>{
+				response.json().then(data=>{
+					document.getElementById("cidade").value=data.localidade;
+					document.getElementById("bairro").value=data.bairro;
+					document.getElementById("endereco").value=data.logradouro;
+					console.log(data)
+				})
+			})
+		})
 		function cadastro(event) {
 			console.log(event)
 			var user = {
