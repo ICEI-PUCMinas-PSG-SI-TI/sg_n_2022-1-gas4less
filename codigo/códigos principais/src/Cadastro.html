@@ -1,84 +1,122 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
-	<title>Gas4Less</title>
+<title>Gas4Less</title>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<head>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="jquery/jquery.min.js"></script>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="Cadastro.css">
-	</head>
-	<body>
+<head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="jquery/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="Cadastro.css">
+	<script src="./cadastro.js" type="module" defer></script>
+</head>
+
+<body>
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row centralizar">
-					<div class="col-md-12">
-						<a href="Principal.html"><img class="logo" src="../imagens/logocerto.png" alt="logo"></a>
-					</div>
-			</div>		
- 			<hr>
+				<div class="col-md-12">
+					<a href="Principal.html"><img class="logo" src="../imagens/logocerto.png" alt="logo"></a>
+				</div>
+			</div>
+			<hr>
 			<div class="row centralizar">
 				<div class="col-md-7">
- 					<form role="form" method="get" action="Login.html" onsubmit="cadastro(this)">
-						<fieldset>							
-							<p style="color:rgb(0, 0, 0);" class="text-uppercase pull-center"><B>Cadastro</B>  </p>	
- 							<div class="form-group">
-								<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Nome usuário" autocomplete="off">
+					<form role="form" method="get" action="Login.html" onsubmit="cadastro(this)">
+						<fieldset>
+							<p style="color:rgb(0, 0, 0);" class="text-uppercase pull-center"><B>Cadastro</B> </p>
+							<div class="form-group">
+								<input type="text" name="username" id="username" class="form-control input-lg"
+									placeholder="Nome usuário" autocomplete="off">
 							</div>
 
 							<div class="form-group">
-								<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email " autocomplete="off">
+								<input type="email" name="email" id="email" class="form-control input-lg"
+									placeholder="Email " autocomplete="off">
 							</div>
 							<div class="form-group">
-								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha">
+								<input type="password" name="password" id="password" class="form-control input-lg"
+									placeholder="Senha">
 							</div>
 							<div class="form-group">
-								<input type="password" name="confirmarsenha" id="confirmarsenha" class="form-control input-lg" placeholder="Confirmar Senha">
+								<input type="password" name="confirmarsenha" id="confirmarsenha"
+									class="form-control input-lg" placeholder="Confirmar Senha">
 							</div>
-								<div class="form-group">
-								<input type="text" name="endereco" id="endereco" class="form-control input-lg" placeholder="Endereço" autocomplete="off">
+							<div class="form-group">
+								<input type="text" name="cep" id="cep" class="form-control input-lg" placeholder="Cep"
+									autocomplete="off">
 							</div>
-							
+							<div class="form-group">
+								<input type="text" name="cidade" id="cidade" class="form-control input-lg"
+									placeholder="Cidade" autocomplete="off">
+							</div>
+							<div class="form-group">
+								<input type="text" name="bairro" id="bairro" class="form-control input-lg"
+									placeholder="Bairro" autocomplete="off">
+							</div>
+							<div class="form-group">
+								<input type="text" name="rua" id="endereco" class="form-control input-lg"
+									placeholder="Rua/Avenida" autocomplete="off">
+							</div>
+
 							<div class="form-group">
 								<select class="form-control search-slt" name="fuel_id">
-                                    <option value="1">Categoria de Uso</option>
-                                    <option value="2">Pessoal</option>
-                                    <option value="3">Motorista de Aplicativo</option>
-                                    <option value="4">Táxi</option>
-                                    <option value="5">Trabalho com Automóvel</option>
-                                </select>
+									<option value="1">Categoria de Uso</option>
+									<option value="2">Pessoal</option>
+									<option value="3">Motorista de Aplicativo</option>
+									<option value="4">Táxi</option>
+									<option value="5">Trabalho com Automóvel</option>
+								</select>
 							</div>
-	
- 							<div>
- 								<input style="color:rgb(255, 0, 0);" class="btn-link" type="submit">
-                                <a style="color:rgb(255, 0, 0);" class="btn-link voltar" href="Principal.html"> Voltar </a>
- 							</div>
+
+							<div>
+								<input style="color:rgb(255, 0, 0);" class="btn-link" type="submit">
+								<a style="color:rgb(255, 0, 0);" class="btn-link voltar" href="Principal.html"> Voltar
+								</a>
+							</div>
 						</fieldset>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
 	<script>
+		const preencherFormulario = (local) => {
+			document.getElementById('endereco').value = local.logradouro;
+			document.getElementById('bairro').value = local.bairro;
+			document.getElementById('cidade').value = local.localidade;
+
+		}
+		const pesquisarCep = async () => {
+			const cep = document.getElementById('cep').value;
+			console.log(cep);
+			const url = `http://viacep.com.br/ws/${cep}/json/`;
+			
+			const dados = await fetch(url);
+			const local = await dados.json();
+			preencherFormulario(local);
+
+		}
 		function cadastro(event) {
-		  console.log(event)
-		  var user={
-			  username:event.username.value,
-			  email:event.email.value,
-			  password:event.password.value,
-			  endereco:event.endereco.value,
-		  };
-		  localStorage.setItem("user", JSON.stringify(user));
+			console.log(event)
+			var user = {
+				username: event.username.value,
+				email: event.email.value,
+				password: event.password.value,
+			};
+			localStorage.setItem("user", JSON.stringify(user));
 		}
 	</script>
 </body>
-	 
+
 
 </html>
