@@ -27,7 +27,7 @@
                 <input class="field" type="text" id="nomeid" required="required" name="nome" placeholder="Nome">
                 <input class="field" type="email" id="email" name="email" placeholder="Email">
                 <textarea class="field" placeholder="Digite sua mensagem aqui"></textarea>
-                <button type="button" name="search" value="true" class="btn wrn-btn enviar" onclick="Enviar()"><i
+                <button type="button" name="search" value="true" id="nomeid" class="btn wrn-btn enviar" onclick="Enviar()"><i
                         class="enviar"></i> Enviar</button>
             </form>
         </div>
@@ -37,8 +37,10 @@
 
     <script>
         function Enviar() {
-
             var nome = document.getElementById("nomeid");
+            if(nome.value ==""){
+                alert('Por favor , preencha os campos .');
+            }
             if (nome.value != "") {
                 alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
                 location.replace("Principal2.html");
