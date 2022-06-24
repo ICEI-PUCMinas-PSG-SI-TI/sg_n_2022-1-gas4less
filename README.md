@@ -17,4 +17,5 @@ prezando ainda pela qualidade e confiabilidade do estabelecimento.
 * Marta
 
 ## Instruções de utilização
+Para chegar nos códigos principais, basta entrar em códigos > códigos principais > src.
 https://trello.com/b/zr2Fg9d8/g4sforless

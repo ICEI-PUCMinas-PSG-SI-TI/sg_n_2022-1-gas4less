@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url(../imagens/background1.jpg);
+    background: rgb(219, 219, 219) !important;
 }
 
 .content {
@@ -37,6 +37,12 @@ textarea {
     display: block;
 }
 
-.enviar{
-    background-color: rgb(83, 0, 0);
+.enviar {
+    background-color: rgb(255, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.enviar:hover {
+    color: rgb(255, 0, 0) !important;
+    background-color: white !important;
 }
