@@ -21,8 +21,9 @@
                         <a href="Principal2.html"><img src="../imagens/logocerto.png" class="logo"></a>
                     </div>
                     <header>
-                        <div style="color:rgb(0, 0, 0);" class="panel-heading"><p> Cadastro
-                            Posto</p>
+                        <div style="color:rgb(0, 0, 0);" class="panel-heading">
+                            <p> Cadastro
+                                Posto</p>
                         </div>
                     </header>
                 </div>
@@ -69,6 +70,7 @@
                                 class="form-control input-md" required="" type="text" maxlength="10"
                                 onBlur="showhide()">
                         </div>
+                        
                         <label class="col-md-1 control-label" for="Nome"> Gasolina Aditivada<h11>*</h11></label>
                         <div class="col-md-2">
                             <input id="gasolinaAditivada" name="dtnasc" placeholder="Valor ex : 8,99 "
@@ -90,18 +92,13 @@
                                     type="Reset">Cancelar</button>
                                 <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit"
                                     onclick="Enviar()">Cadastrar</button>
-                                
                             </div>
                         </div>
-
                     </div>
                 </div>
-
+            </fieldset>
+        </form>
     </main>
-    </fieldset>
-    </form>
-    <div>
-    </div>
     <footer class=" footer">
         <div class="container">
             <div class="row">
@@ -115,18 +112,11 @@
 
     </footer>
     <script>
-        function Voltar() {
-            var voltar = document.getElementById("Cancelar");
-            if (voltar.value)
-                location.replace("Principal2.html");
-        }
-
         function Enviar() {
 
-            var nome = document.getElementById("Posto");
+            var nome = document.getElementById("Cadastrar");
             if (nome.value != "") {
                 alert('Posto cadastrado com sucesso!');
-                location.replace("Principal2.html");
             }
 
         }
