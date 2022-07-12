@@ -77,6 +77,9 @@
                 </div>
             </div>
         </div>
+        <h5>Sua localização atual</h5>
+        <div id="my_map"></div>
+
         <div class="container">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 oi">
                 <h1 class="titulo1">GAS4LESS</h1>
@@ -137,8 +140,7 @@
                                 combustíveis.
                             </p>
                             <div class="col-sm-12 col-md-12 col-lg-12 ">
-                                <button
-                                    type="button" class="btn btn-primary btn-sm botao1"> Ver postos de gasolina
+                                <button type="button" class="btn btn-primary btn-sm botao1"> Ver postos de gasolina
                                     proximos
                                 </button>
                             </div>
@@ -170,7 +172,8 @@
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-6">
                 <h3>Sobre o projeto GAS4LESS</h3>
-                <p>Esse site é um projeto feito no primeiro período da graduação de Sistemas de Informação da PUC Minas
+                <p>Esse site é um projeto feito no primeiro período da graduação de Sistemas de Informação da PUC
+                    Minas
                     unidade São Gabriel, na máteria de TIAW (Trabalho Interdisciplinar: Aplicações Web), projeto
                     para simular um site de procura e filtro de preços de commbustíveis em em toda cidade.</p>
                 <h3>Redes Sociais</h3>
@@ -270,6 +273,14 @@
             }
         }
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+       
+        $(document).ready(function () {
+            var user = JSON.parse(localStorage.getItem("user"));
+		    var cep = user.cep;
+            $("#my_map").append(`<iframe id="my_map" width="600" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_ZcDIaLY9B7QIKf5aiGWmIIkXoBZKDN4&q=${cep}"/>`);
+        });
+    </script>
 </body>
-
 </html>
