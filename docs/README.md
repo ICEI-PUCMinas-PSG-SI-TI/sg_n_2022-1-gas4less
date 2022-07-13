@@ -30,4 +30,4 @@ https://trello.com/b/zr2Fg9d8/g4sforless
 
 ##Link do youtube : 
 
-
+https://youtu.be/Lfz_e743AIQ
